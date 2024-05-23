@@ -12,10 +12,14 @@
       <li>Before that we want to install a virtual environment on the desktop. <br><h3> <code>pip install virtualenv</code></h3></li>
     </ul>
     </li>
-    <li>After creating a virtual environment we want to install some needed packages and libraries for project.</li>
-    <li>For that we want to go <tt>Script</tt> and <tt>Activate</tt>.</li>
+    <li>After creating a virtual environment we want to install some needed packages and libraries for a project.</li>
+    <li>For that we want to go <tt>Scripts</tt> and <tt>Activate</tt>.</li>
     <div>
       <h3><blockquote><code> C:// Users/ User/ Desktop/ Shop-Project/ Env/ Scripts> Activate </code></blockquote></h3>
     </div>
-  
+  <li>In this Project we have using a Django web framework so that we want to install django inside a <tt>Scripts</tt>.</li>
+  <ul>
+    <h3><code>pip install django</code></h3>
+  </ul>
+<li></li>
 </ul>
