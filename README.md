@@ -44,6 +44,35 @@
  <ul>
    <h3><code>py manage.py runserver</code></h3>
  </ul>
- <li>After Creating Apps we want to add in Installed Apps list at <tt>Settings.py</tt> files.</li>
- <li>Next we want to create a Templates folder and a Static Folder.</li>
+ <li>After Creating Apps we want to add to the Installed Apps list at  files.</li>
+ <ul><h3>
+   INSTALLED_APPS = [ <br>
+                   ....,<br>
+                   ....,<br>
+                'Admin',<br>
+             'Customer',<br>
+]
+ </h3></ul>
+ <li>Next we want to create a <tt>Templates</tt> folder and a <tt>Static</tt> Folder.</li>
+ <ul>
+   <li>Templates Folder is used to store <b>HTML</b> files for the Specific Project.</li>
+   <li>Static Folder is used to store <b>CSS</b> files, <b>JavaScript</b> files, and <b>Images</b> for the Specific Project.</li>
+   <li>After creating these folders we want to configure our folder in <tt>Settings.py</tt>.</li>
+   <li>Templates config,
+     <h3><code>TEMPLATES = [</code><br>
+     <code>    {</code><br>
+     <code>        ......,</code><br>
+     <code>        DIRS:  [os.path.join(BASE_DIR, "templates")]</code><br>
+     <code>        ......,</code><br>
+     <code>     }</code><br>
+   <code>]</code></h3></li>
+
+   <li>Static config,
+     <h3><code>STATIC_URL = 'static/'</code><br>
+       <code>STATICFILES_DIRS = [os.path.join(BASE_DIR, STATIC_URL)]</code><br>
+       <code>STATIC_ROOT = os.path.join(BASE_DIR,'STATICFILES_DIRS')</code></h3>
+   </li>
+ </ul>
+ <li>After Configuring all these folders we want to create separate <tt>urls.py</tt> files for each Apps.</li>
+ <li>After creating we want to configure these Urls to project urls.py </li>
 </ul>
