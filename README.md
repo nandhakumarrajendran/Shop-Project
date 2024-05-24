@@ -44,5 +44,6 @@
  <ul>
    <h3><code>py manage.py runserver</code></h3>
  </ul>
- 
+ <li>After Creating Apps we want to add in Installed Apps list at <tt>Settings.py</tt> files.</li>
+ <li>Next we want to create a Templates folder and a Static Folder.</li>
 </ul>
